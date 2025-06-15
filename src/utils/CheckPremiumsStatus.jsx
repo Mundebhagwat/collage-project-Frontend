@@ -1,7 +1,7 @@
 export const checkPremiumBeforeMessage = async (chatId, message,) => {
   try {
     const token = localStorage.getItem("authToken");
-    const res = await fetch(`https://collage-project-backend-j2vf.onrender.com/api/chat/check-premium-access`, {
+    const res = await fetch(`https://backend-for-mangalastak.onrender.com/api/chat/check-premium-access`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
