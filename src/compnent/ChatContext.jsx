@@ -97,12 +97,12 @@ export const ChatProvider = ({ children }) => {
             return;
         }
 
-        const check = await checkPremiumBeforeMessage(activeChat, text);
+        // const check = await checkPremiumBeforeMessage(activeChat, text);
 
-        if (!check.allowed) {
-            toast.error(check.error || "Upgrade to premium to send messages!");
-            return;
-        }
+        // if (!check.allowed) {
+        //     toast.error(check.error || "Upgrade to premium to send messages!");
+        //     return;
+        // }
 
         // Construct the message data
         const messageData = {
